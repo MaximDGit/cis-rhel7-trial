@@ -57,7 +57,7 @@ rhel7cis_set_boot_pass: false
 
 # Section 1.6.1.2 & 1.6.1.3 | Ensure SELinux state is enforcing and configured
 # true = SELinux is disabled | false = SELinux is enabled
-rhel7cis_selinux_disable: false
+rhel7cis_selinux_disable: true
 
 # Section 1.6.1.2 & 1.6.1.3 | SELinux policy
 rhel7cis_selinux_pol: targeted
@@ -164,7 +164,7 @@ rhel7cis_avahi_server: false
 rhel7cis_is_router: false
 
 # IPv6 required
-rhel7cis_ipv6_required: true
+rhel7cis_ipv6_required: false
 
 # 3.4.2 | PATCH | Ensure /etc/hosts.allow is configured
 rhel7cis_host_allow:
@@ -208,7 +208,7 @@ rhel7cis_log_server: false
 
 # Section 4.2.1.x | rsyslog settings
 # IF using rsyslog, set to true and loghost_address should be reflected here
-rhel7cis_rsyslog: false
+rhel7cis_rsyslog: true
 rhel7cis_rsyslog_loghost_address: INSERT_DNS_NAME_HERE
 
 # Section 4.2.2.x | syslog_ng settings
